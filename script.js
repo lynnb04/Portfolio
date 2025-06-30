@@ -1,8 +1,8 @@
 // inladen header en footer
 // ------------------------
 document.addEventListener("DOMContentLoaded", function () {
-  includeHTML("partials/header.html", "header-placeholder", markActiveNavLink);
-  includeHTML("partials/footer.html", "footer-placeholder");
+  includeHTML("/partials/header.html", "header-placeholder", markActiveNavLink);
+  includeHTML("/partials/footer.html", "footer-placeholder");
 });
 
 function includeHTML(file, elementId, callback) {
@@ -28,6 +28,10 @@ function markActiveNavLink() {
 
   document.querySelectorAll("nav a").forEach(link => {
     const linkPath = new URL(link.href).pathname;
+
+        // Vergelijk ook "/" met "/index.html"
+    const isHomepage = (currentPath === "/" && linkPath.endsWith("/index.html")) ||
+                       (currentPath === "/index.html" && linkPath === "/");
 
     if (linkPath === currentPath || currentPath.endsWith(linkPath)) {
       link.classList.add("active");

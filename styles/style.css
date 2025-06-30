@@ -78,7 +78,7 @@ p {
 .rechthoekh2 {
   position: relative;
   display: block;
-  width: 300px;
+  width: 220px;
   margin: 0 auto;
   padding: 10px 5px;
   z-index: 1;
@@ -117,18 +117,19 @@ p {
 /* header nav bar */
 .header {
     position: fixed;
-    top: 1;
+    top: 0;
     left: 0;
     right: 0;
-    margin-bottom: 1rem;
+    z-index: 6;
 }
 
 header nav {
   display: flex;
   justify-content: center;
   gap: 3rem;
-  margin-bottom: 2rem;
+
   padding: 1rem 2rem;
+
 }
 
 header nav a {
@@ -138,6 +139,7 @@ header nav a {
   font-size:larger;
   color:#f3f3f3;
   text-decoration: none;
+  background-color: #2f2f2d;
 }
 
 
