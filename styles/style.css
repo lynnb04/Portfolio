@@ -110,6 +110,7 @@ footer {
     gap: 5rem;
     justify-content: center;
     color:#7C5555;
+    margin-top: 50px;
 }
 
 
@@ -118,9 +119,10 @@ footer {
 .button-link {
   text-align: center;
   color:#f3f3f3;
-  border: 1.5px solid #f3f3f3;
-  padding: 10px;
-  border-radius: 3px;
+  padding: 11px;
+  border-radius: 10px;
   background-color:#924246;
   text-decoration: none;
+  font-weight: bold;
+  border: 0.1px solid #f3f3f3;
 }
