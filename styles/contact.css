@@ -1,0 +1,47 @@
+/* rechthoek achter h1 */
+.rechthoekh1 {
+  position: relative;
+  display: block;
+  width: 190px;
+  margin: 0 auto;
+  padding: 10px 5px;
+  z-index: 1;
+  text-align: center;
+}
+
+.rechthoekh1::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 15px;
+  width: 96%;
+  height: 60%;
+  background-color: #924246;
+  z-index: -1;
+}
+
+/* rechthoek achter h2 */
+.rechthoekh2 {
+  position: relative;
+  display: block;
+  width: 220px;
+  margin: 0 auto;
+  padding: 10px 5px;
+  z-index: 1;
+  text-align: center;
+}
+
+.center-wrapper {
+    text-align: center;
+}
+
+.rechthoekh2::before {
+  content: "";
+  position: absolute;
+  top: 24.5px;
+  left: 0;
+  width: 100%;
+  height: 10%;
+  background-color: #695D5D;
+  z-index: -1;
+}
