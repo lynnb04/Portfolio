@@ -76,7 +76,7 @@ header nav a {
 }
 
 nav a.active {
-  color: #695D5D;
+  color: #7C5555;
 }
 
 
@@ -101,7 +101,7 @@ footer .socials {
 }
 
 footer .socials a {
-    color:#695D5D;
+    color:#7C5555;
     text-decoration: none;
 }
 
@@ -109,7 +109,7 @@ footer {
     display: flex;
     gap: 5rem;
     justify-content: center;
-    color:#695D5D;
+    color:#7C5555;
 }
 
 
