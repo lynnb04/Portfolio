@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
+
+
 /* algemene styling */
 * {
   margin: 0;
@@ -9,6 +11,8 @@
   box-sizing: border-box;
   background-color: #2f2f2d;
 }
+
+
 
 /* achtergrond en fonts */
 body {
@@ -20,6 +24,8 @@ body {
   color:#f3f3f3;
   padding: 2rem;
 }
+
+
 
 /* tekst */
 h1 {
@@ -36,6 +42,8 @@ h1 {
 p {
     text-align: center;
 }
+
+
 
 /* header nav bar */
 header nav {
@@ -56,6 +64,7 @@ header nav a {
 }
 
 
+
 /* footer */
 .wrapper {
     min-height: 100vh;
@@ -71,7 +80,6 @@ footer .socials {
     display: flex;
     justify-content: center;
     gap: 1.5rem;
-    margin-top: 0.5rem;
 }
 
 footer .socials a {
@@ -79,11 +87,8 @@ footer .socials a {
     text-decoration: none;
 }
 
-footer .socials a i {
-    font-size: 1.5rem;
-}
-
 footer {
     display: flex;
-    gap: 1rem;
+    gap: 5rem;
+    justify-content: center;
 }
