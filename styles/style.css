@@ -43,7 +43,7 @@ h1 {
 h2 {
     text-align: center;
     margin-bottom: 2rem;
-    color:#d4aeae;
+    color:#f3f3f3;
 }
 
 p {
@@ -53,15 +53,17 @@ p {
 
 
 /* rechthoek achter h1 */
-.rechthoek {
+.rechthoekh1 {
   position: relative;
-  display: inline-block;
+  display: block;
+  width: 390px;
+  margin: 0 auto;
   padding: 10px 5px;
   z-index: 1;
   text-align: center;
 }
 
-.rechthoek::before {
+.rechthoekh1::before {
   content: "";
   position: absolute;
   top: 5px;
@@ -72,12 +74,53 @@ p {
   z-index: -1;
 }
 
+/* rechthoek achter h2 */
+.rechthoekh2 {
+  position: relative;
+  display: block;
+  width: 300px;
+  margin: 0 auto;
+  padding: 10px 5px;
+  z-index: 1;
+  text-align: center;
+}
+
+.center-wrapper {
+    text-align: center;
+}
+
+.rechthoekh2::before {
+  content: "";
+  position: absolute;
+  top: 24.5px;
+  left: 0;
+  width: 100%;
+  height: 10%;
+  background-color: #695D5D;
+  z-index: -1;
+}
+
+
+/* puntjes onder h1 */
+.puntjes {
+    background-color: transparent;
+    position: relative;
+    top: -40px;
+    text-align: center;
+    z-index: 5;
+    user-select: none;
+    font-size: 1.9rem;
+}
+
+
+
 /* header nav bar */
 .header {
     position: fixed;
     top: 1;
     left: 0;
     right: 0;
+    margin-bottom: 1rem;
 }
 
 header nav {
@@ -119,7 +162,7 @@ footer .socials {
 }
 
 footer .socials a {
-    color:#f3f3f3;
+    color:#695D5D;
     text-decoration: none;
 }
 
@@ -127,4 +170,11 @@ footer {
     display: flex;
     gap: 5rem;
     justify-content: center;
+    color:#695D5D;
+}
+
+
+/* kleur voor active link */
+nav a.active {
+  color: #695D5D;
 }
