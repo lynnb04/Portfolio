@@ -42,6 +42,17 @@ h2 {
     color:#f3f3f3;
 }
 
+h3 {
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-size:200%;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  color:#f3f3f3;
+  text-align: center;
+}
+
 p {
     text-align: center;
 }

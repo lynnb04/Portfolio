@@ -45,3 +45,69 @@
   background-color: #695D5D;
   z-index: -1;
 }
+
+
+
+.project-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px; /* ruimte tussen cards */
+  padding: 10px;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.project-card {
+  flex: 1 1 100%; /* mobiel: volledige breedte */
+  max-width: 320px;
+  background-color: #2d2d2d;
+  color: #f3f3f3;
+  border: 2px solid #7C5555;
+  border-radius: 12px;
+  padding: 16px;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.project-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+}
+
+.project-image img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.project-info h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+.project-info p {
+  margin: 8px 0 0;
+  font-size: 0.95rem;
+  color: #dcdcdc;
+  text-align: center;
+}
+
+/* Tablet (vanaf 768px) - 2 cards per rij */
+@media (min-width: 768px) {
+  .project-card {
+    flex: 1 1 calc(50% - 16px);
+    max-width: none;
+  }
+}
+
+/* Laptop (vanaf 1024px) - 3 cards per rij */
+@media (min-width: 1024px) {
+  .project-card {
+    flex: 1 1 calc(33.33% - 16px);
+  }
+}
