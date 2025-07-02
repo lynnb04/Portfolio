@@ -73,7 +73,7 @@ h2 {
   flex-direction: column;
   align-items: center;
   text-decoration: none;
-  background-color: #2d2d2d;
+  background-color: #383838;
   color: #f3f3f3;
   border: 2px solid #7C5555;
   border-radius: 12px;
@@ -88,16 +88,25 @@ h2 {
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
 }
 
+.project-image {
+  background-color: #383838;
+}
+
 .project-image img {
   width: 100%;
   border-radius: 8px;
   margin-bottom: 12px;
 }
 
+.project-info {
+  background-color: #383838;
+}
+
 .project-info h3 {
   margin: 0;
   font-size: 1.2rem;
   color: #ffffff;
+  background-color: #383838;
 }
 
 .project-info p {
@@ -105,6 +114,7 @@ h2 {
   font-size: 0.95rem;
   color: #dcdcdc;
   text-align: center;
+  background-color: #383838;
 }
 
 @media (min-width: 768px) {
