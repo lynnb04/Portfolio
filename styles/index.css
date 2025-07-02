@@ -2,11 +2,13 @@
 .rechthoekh1 {
   position: relative;
   display: block;
-  width: 390px;
+  width: 215px;
   margin: 0 auto;
   padding: 10px 5px;
   z-index: 1;
   text-align: center;
+  text-decoration-line:underline;
+  text-decoration-style:dotted;
 }
 
 .rechthoekh1::before {
